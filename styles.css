@@ -1,0 +1,148 @@
+:root {
+  --bg: #0f172a;
+  --bg-soft: #111827;
+  --text: #e5e7eb;
+  --muted: #94a3b8;
+  --brand: #ef4444;
+  --brand-hover: #dc2626;
+  --card: #1f2937;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+  color: var(--text);
+  background: linear-gradient(180deg, var(--bg), #020617 55%);
+  line-height: 1.7;
+}
+
+.hero {
+  min-height: 80vh;
+  padding: 1.2rem 8vw 4rem;
+}
+
+.nav {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin-right: auto;
+  letter-spacing: 0.04em;
+}
+
+.nav-link {
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.nav-link:hover {
+  color: #fff;
+}
+
+.hero-content {
+  margin-top: 8vh;
+  max-width: 760px;
+}
+
+.tag {
+  color: #fda4af;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: clamp(2rem, 4vw, 3.4rem);
+  line-height: 1.2;
+  margin: 0.4rem 0 1rem;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 1rem;
+  background: var(--brand);
+  color: #fff;
+  text-decoration: none;
+  padding: 0.72rem 1.2rem;
+  border-radius: 0.6rem;
+  font-weight: 700;
+}
+
+.button:hover {
+  background: var(--brand-hover);
+}
+
+.section {
+  padding: 4rem 8vw;
+}
+
+.alt {
+  background: rgba(17, 24, 39, 0.75);
+}
+
+.card-grid {
+  margin-top: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  border-radius: 0.8rem;
+  padding: 1rem;
+}
+
+.feature-list {
+  margin: 1.25rem 0 0;
+  padding-left: 1.2rem;
+}
+
+.cta {
+  text-align: center;
+}
+
+.subscribe-form {
+  margin-top: 1.4rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.subscribe-form input {
+  width: min(360px, 84vw);
+  padding: 0.7rem 0.9rem;
+  border-radius: 0.6rem;
+  border: none;
+}
+
+.subscribe-form button {
+  padding: 0.7rem 1rem;
+  border: none;
+  border-radius: 0.6rem;
+  background: var(--brand);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.subscribe-form button:hover {
+  background: var(--brand-hover);
+}
+
+footer {
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.9rem;
+  padding: 1.8rem 0 2.5rem;
+}
